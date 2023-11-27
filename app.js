@@ -36,7 +36,7 @@ const handleSearch = async () => {
 };
 
 // Debounce search input with a delay of 1000 milliseconds
-const debouncedSearch = debounce(handleSearch, 3000);
+const debouncedSearch = debounce(handleSearch, 2000);
 
 // Event listener for search input
 document.querySelector(".weather__searchform").addEventListener('input', debouncedSearch);
