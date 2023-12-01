@@ -39,7 +39,9 @@ const handleSearch = async () => {
 const debouncedSearch = debounce(handleSearch, 2000);
 
 // Event listener for search input
-document.querySelector(".weather__searchform").addEventListener('input', debouncedSearch);
+// document.querySelector(".weather__searchform").addEventListener('input', debouncedSearch);
+document.querySelector(".weather__searchform").addEventListener('change', handleSearch);
+
 
 // Temperature units change event listeners
 document.querySelector(".weather_unit_celsius").addEventListener('click', () => {
