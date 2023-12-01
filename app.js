@@ -62,6 +62,27 @@ document.querySelector(".weather_unit_farenheit").addEventListener('click', () =
     }
 });
 
+// // Event listener untuk suhu dalam Celsius
+// document.querySelector(".weather_unit_celsius").addEventListener('change', () => {
+//   if (units !== "metric") {
+//       // Mengganti ke satuan metrik
+//       units = "metric";
+//       // Mendapatkan prakiraan cuaca
+//       getWeather();
+//   }
+// });
+
+// // Event listener untuk suhu dalam Fahrenheit
+// document.querySelector(".weather_unit_farenheit").addEventListener('change', () => {
+//   if (units !== "imperial") {
+//       // Mengganti ke satuan imperial
+//       units = "imperial";
+//       // Mendapatkan prakiraan cuaca
+//       getWeather();
+//   }
+// });
+
+
 // Function to convert timestamp to formatted date string
 function convertTimeStamp(timestamp, timezone){
     const convertTimezone = timezone / 3600; // convert seconds to hours 
