@@ -35,12 +35,12 @@ const handleSearch = async () => {
   await getWeather();
 };
 
-// Debounce search input with a delay of 1000 milliseconds
+// Debounce search input with a delay of 2000 milliseconds
 const debouncedSearch = debounce(handleSearch, 2000);
 
 // Event listener for search input
 // document.querySelector(".weather__searchform").addEventListener('input', debouncedSearch);
-document.querySelector(".weather__searchform").addEventListener('change', handleSearch);
+document.querySelector(".weather__searchform").addEventListener('change', debouncedSearch);
 
 
 // Temperature units change event listeners
